@@ -17,11 +17,12 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get # Get dependencies
       - run: flutter build web # Build for web
-      - name: commit # Set up bot fake user and commit changes to the gh-pages branch
+      - name: commit # Set up fake user, use shell script to copy over web files, and commit changes to the gh-pages branch
         run: | 
           git config --global user.email "action@loganboisvert.com"
           git config --global user.name "GitHub Pages Publisher"
           git checkout gh-pages
+          sh update.sh
           git add .
           git commit -m "Publish to GitHub Pages"
       - name: push # Push committed changes to gh-pages for deployment
