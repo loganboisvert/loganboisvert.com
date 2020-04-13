@@ -28,5 +28,5 @@ jobs:
       - name: push # Push committed changes to gh-pages for deployment
         uses: ad-m/github-push-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "gh-pages"
