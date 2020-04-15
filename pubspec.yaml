@@ -6,7 +6,7 @@ dependencies:
   flutter: 
     sdk: "flutter"
 dev_dependencies: 
-  local_google_fonts: "^1.0.5"
+  local_google_fonts: "^1.0.8"
   flutter_test: 
     sdk: "flutter"
 environment: 
