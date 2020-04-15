@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:logan_boisvert_website/routes/about/about.dart';
 import 'package:logan_boisvert_website/routes/index/index.dart';
+import 'package:logan_boisvert_website/routes/podcast/podcast.dart';
+import 'package:logan_boisvert_website/routes/store/store.dart';
+import 'package:logan_boisvert_website/routes/streaming/streaming.dart';
 
 import 'package:logan_boisvert_website/widgets/colors.dart';
 
@@ -8,6 +12,11 @@ class NavButtons {
     DrawerHeader(
       child: NavButton (name: "Home", route: IndexRoute.route),
     ),
+    NavButton(name: "About Me", route: AboutRoute.route),
+    NavButton(name: "Podcast", route: PodcastRoute.route),
+    NavButton(name: "Streaming", route: StreamingRoute.route),
+    NavButton(name: "Store", route: StoreRoute.route),
+
   ];
 }
 
