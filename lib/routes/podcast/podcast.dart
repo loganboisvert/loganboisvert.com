@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:logan_boisvert_website/widgets/menu.dart';
+import 'package:logan_boisvert_website/widgets/appbar.dart';
 
 class PodcastRoute extends StatelessWidget {
   static const route = "/podcast";
@@ -9,10 +9,11 @@ class PodcastRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Logan Boisvert"),
+        title: Text("Logan Boisvert", style: TextStyle(fontSize: 42)),
         centerTitle: true,
+        titleSpacing: 0.0,
       ),
-      drawer: Menu()
+      drawer: Menu(),
     );
   }
 }
