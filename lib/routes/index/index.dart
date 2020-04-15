@@ -8,11 +8,11 @@ class IndexRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Logan Boisvert"),
-        centerTitle: true,
-      ),
-      drawer: Menu()
-    );
+        appBar: AppBar(
+          title: Text("Logan Boisvert", style: TextStyle(fontSize: 42)),
+          centerTitle: true,
+          titleSpacing: 0.0,
+        ),
+        drawer: Menu());
   }
 }
