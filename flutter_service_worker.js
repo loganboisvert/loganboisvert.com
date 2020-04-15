@@ -10,7 +10,7 @@ const RESOURCES = {
 "assets/assets/fonts/googleFonts/Fjalla-One/Fjalla-One-400.ttf": "6d03f83cb1e9751dfe8c4b7bdd0cf632",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/FontManifest.json": "63b588de78fed76e52efd17c26f3ecd5",
-"main.dart.js": "5cce89be62a8a9696c1e36be8e5abf2f",
+"main.dart.js": "32e104f8cf70baed90112360fe55c9cf",
 "index.html": "e62a49d4cb42973a2f78f05738407370",
 "/": "e62a49d4cb42973a2f78f05738407370"
 };
