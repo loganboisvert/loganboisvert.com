@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:logan_boisvert_website/widgets/navbuttons.dart';
+import 'package:logan_boisvert_website/widgets/menu.dart';
 
 class IndexRoute extends StatelessWidget {
   static const route = "/";
@@ -12,12 +12,7 @@ class IndexRoute extends StatelessWidget {
         title: Text("Logan Boisvert"),
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.all(0),
-          children: NavButtons.buttons,
-        ),
-      ),
+      drawer: Menu()
     );
   }
 }
