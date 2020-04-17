@@ -4,20 +4,18 @@ publish_to: "none"
 version: "1.0.0+1"
 dependencies: 
   flutter: 
-    sdk: "flutter"
+    sdk: flutter
 dev_dependencies: 
   local_google_fonts: "^1.0.8"
   flutter_test: 
-    sdk: "flutter"
+    sdk: flutter
 environment: 
   sdk: ">=2.7.0 <3.0.0"
 flutter: 
   fonts: 
-    - 
-      family: "Fjalla One"
+    - family: "Fjalla One"
       fonts: 
-        - 
-          asset: "assets/fonts/googleFonts/Fjalla-One/Fjalla-One-400.ttf"
+        - asset: "assets/fonts/googleFonts/Fjalla-One/Fjalla-One-400.ttf"
           weight: 400
   uses-material-design: true
 google_fonts: 
