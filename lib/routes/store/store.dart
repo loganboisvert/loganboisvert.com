@@ -9,7 +9,7 @@ class StoreRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Logan Boisvert", style: TextStyle(fontSize: 42)),
+        title: AppBarTitle(),
         centerTitle: true,
         titleSpacing: 0.0,
       ),
