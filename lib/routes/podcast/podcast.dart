@@ -7,6 +7,7 @@ import 'dart:ui' as ui;
 
 // Project imports
 import 'package:logan_boisvert_website/widgets/appbar.dart';
+import 'package:logan_boisvert_website/widgets/footer.dart';
 
 class PodcastRoute extends StatelessWidget {
   static const route = '/podcast';
@@ -49,6 +50,7 @@ class PodcastRoute extends StatelessWidget {
           ],
         ),
       ),
+      bottomSheet: Footer(),
     );
   }
 }

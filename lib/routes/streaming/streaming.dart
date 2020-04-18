@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 // Project imports
 import 'package:logan_boisvert_website/widgets/appbar.dart';
+import 'package:logan_boisvert_website/widgets/footer.dart';
 
 class StreamingRoute extends StatelessWidget {
   static const route = '/stream';
@@ -16,6 +17,7 @@ class StreamingRoute extends StatelessWidget {
         titleSpacing: 0.0,
       ),
       drawer: Menu(),
+      bottomSheet: Footer(),
     );
   }
 }
