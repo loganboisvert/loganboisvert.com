@@ -10,12 +10,13 @@ const RESOURCES = {
 "icons/favicon_16x16.png": "f22e2980b0d18abb2dbdeb95c344f838",
 "icons/favicon_270x270.png": "c3093bcdc87271f6d1368526709f662f",
 "icons/favicon_32x32.png": "83b77edd8852962b8d29f7b8fd13e7ab",
+"assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "6acc7d6cffa21f6eda4baaa90e835fd2",
 "assets/assets/fonts/googleFonts/Fjalla-One/Fjalla-One-400.ttf": "6d03f83cb1e9751dfe8c4b7bdd0cf632",
-"assets/FontManifest.json": "63b588de78fed76e52efd17c26f3ecd5",
+"assets/FontManifest.json": "6d72a84c631f1b111f699d23a5600f5a",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/AssetManifest.json": "efd7511aecf08ba3f60415b75cdd069a",
-"assets/LICENSE": "a14fcc2adeac3cd035eb9da7c0e48b12",
-"main.dart.js": "465b6fa5bc8885d4408e6aeb54829dc1",
+"assets/AssetManifest.json": "581ef7a3e3062398af2a3aa885e167c9",
+"assets/LICENSE": "fc6f479da435a309aa95ba588a05307d",
+"main.dart.js": "7b661370b0080c7dcf689a3b85749546",
 "manifest.json": "c3956ec5329e39410ca24d98eefb89cb"
 };
 
