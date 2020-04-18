@@ -2,23 +2,25 @@ description: "Logan Boisvert's personal website"
 name: "logan_boisvert_website"
 publish_to: "none"
 version: "1.0.0+1"
-dependencies: 
-  flutter: 
+dependencies:
+  flutter:
     sdk: flutter
-dev_dependencies: 
+  material_design_icons_flutter: 3.2.3695
+  url_launcher:
+dev_dependencies:
   local_google_fonts: "^1.0.8"
-  flutter_test: 
+  flutter_test:
     sdk: flutter
-environment: 
+environment:
   sdk: ">=2.7.0 <3.0.0"
-flutter: 
-  fonts: 
+flutter:
+  fonts:
     - family: "Fjalla One"
-      fonts: 
+      fonts:
         - asset: "assets/fonts/googleFonts/Fjalla-One/Fjalla-One-400.ttf"
           weight: 400
   uses-material-design: true
-google_fonts: 
+google_fonts:
   docs: false
-  fonts: 
+  fonts:
     - "Fjalla One"
