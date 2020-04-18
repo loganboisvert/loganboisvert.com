@@ -1,11 +1,11 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "eb13b684dfd94ee641f9a6e8fef0e89a",
-"/": "eb13b684dfd94ee641f9a6e8fef0e89a",
+  "index.html": "6ca024bdef6db4651f929d72313c6d93",
+"/": "6ca024bdef6db4651f929d72313c6d93",
 "icons/favicon_512x512.png": "c13d4f99f37ece68d8eb9d5595f346e9",
 "icons/favicon_180x180.png": "79cab06680ec6ed4ba48b073ed564cc7",
-"icons/browserconfig.xml": "cdffa7d93edc768b6bb8272cdd863723",
+"icons/browserconfig.xml": "b19019befc628679ada8d76b82040424",
 "icons/favicon_192x192.png": "7fb6dbaa78864ad5147278e8fd7bd67f",
 "icons/favicon_16x16.png": "f22e2980b0d18abb2dbdeb95c344f838",
 "icons/favicon_270x270.png": "c3093bcdc87271f6d1368526709f662f",
@@ -17,7 +17,7 @@ const RESOURCES = {
 "assets/AssetManifest.json": "581ef7a3e3062398af2a3aa885e167c9",
 "assets/LICENSE": "fc6f479da435a309aa95ba588a05307d",
 "main.dart.js": "7b661370b0080c7dcf689a3b85749546",
-"manifest.json": "c3956ec5329e39410ca24d98eefb89cb"
+"manifest.json": "be2ce9b674a6c1cc4741108fae01813d"
 };
 
 self.addEventListener('activate', function (event) {
