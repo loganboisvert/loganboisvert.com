@@ -1,9 +1,11 @@
+// Flutter import
 import 'package:flutter/material.dart';
 
+// Project imports
 import 'package:logan_boisvert_website/widgets/appbar.dart';
 
 class PodcastRoute extends StatelessWidget {
-  static const route = "/podcast";
+  static const route = '/podcast';
 
   @override
   Widget build(BuildContext context) {

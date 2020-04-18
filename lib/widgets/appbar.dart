@@ -1,11 +1,13 @@
+// Flutter imports
 import 'package:flutter/material.dart';
 
+// Project imports
 import 'package:logan_boisvert_website/widgets/navbuttons.dart';
 
 class AppBarTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text("Logan Boisvert", style: TextStyle(fontSize: 42));
+    return Text('Logan Boisvert', style: TextStyle(fontSize: 42));
   }
 }
 

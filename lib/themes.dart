@@ -1,10 +1,11 @@
+// Flutter imports
 import 'package:flutter/material.dart';
-
+// Package imports
 import 'package:logan_boisvert_website/widgets/colors.dart';
 
 class Themes {
 
-  final _fontFamily = "Fjalla One";
+  final _fontFamily = 'Fjalla One';
 
   ThemeData get mainTheme => ThemeData(
     brightness: Brightness.dark,

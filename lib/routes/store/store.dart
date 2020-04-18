@@ -1,9 +1,11 @@
+// Flutter imports
 import 'package:flutter/material.dart';
 
+// Project imports
 import 'package:logan_boisvert_website/widgets/appbar.dart';
 
 class StoreRoute extends StatelessWidget {
-  static const route = "/store";
+  static const route = '/store';
 
   @override
   Widget build(BuildContext context) {
