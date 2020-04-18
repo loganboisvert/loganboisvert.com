@@ -16,27 +16,27 @@ class PodcastRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: AppBarTitle(),
+        title: const AppBarTitle(),
         centerTitle: true,
         titleSpacing: 0.0,
       ),
-      drawer: Menu(),
+      drawer: const Menu(),
       body: Center(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 150),
-            Text(
+            const SizedBox(height: 150),
+            const Text(
               'The Noodle Squad',
               style: TextStyle(
                 fontSize: 48,
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text('Lorem ipsum dolor sit amet'),
-            SizedBox(
+            const Text('Lorem ipsum dolor sit amet'),
+            const SizedBox(
               height: 50,
             ),
             SizedBox(
@@ -50,7 +50,7 @@ class PodcastRoute extends StatelessWidget {
           ],
         ),
       ),
-      bottomSheet: Footer(),
+      bottomSheet: const Footer(),
     );
   }
 }

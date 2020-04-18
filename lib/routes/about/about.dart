@@ -12,12 +12,12 @@ class AboutRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: AppBarTitle(),
+        title: const AppBarTitle(),
         centerTitle: true,
         titleSpacing: 0.0,
       ),
-      drawer: Menu(),
-      bottomSheet: Footer(),
+      drawer: const Menu(),
+      bottomSheet: const Footer(),
     );
   }
 }

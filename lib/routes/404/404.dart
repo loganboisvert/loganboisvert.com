@@ -13,25 +13,20 @@ class Route404 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: AppBarTitle(),
+        title: const AppBarTitle(),
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.all(0),
-          children: NavButtons.buttons,
-        ),
-      ),
+      drawer: const Menu(),
       body: Center(
         child: Column(
           children: <Widget>[
-            Text('404'),
-            Text('The requested page could not be found.'),
-            NavButton(name: 'Return to Home', route: IndexRoute.route),
+            const Text('404'),
+            const Text('The requested page could not be found.'),
+            const NavButton(name: 'Return to Home', route: IndexRoute.route),
           ],
         ),
       ),
-      bottomSheet: Footer(),
+      bottomSheet: const Footer(),
     );
   }
 }

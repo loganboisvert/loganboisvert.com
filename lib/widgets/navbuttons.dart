@@ -52,7 +52,7 @@ class _NavButtonState extends State<NavButton> {
               onPressed: () => Navigator.pushNamed(context, widget.route),
               child: Text(
                 widget.name,
-                style: TextStyle(
+                style: const TextStyle(
                     color: ThemeColors.text,
                     fontSize: 36
                 ),

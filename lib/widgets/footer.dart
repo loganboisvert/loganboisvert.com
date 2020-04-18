@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
+  const Footer();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,22 +12,22 @@ class Footer extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Icon(
+            const Icon(
               Icons.copyright,
             ),
-            SizedBox(
+            const SizedBox(
               width: 5,
             ),
             Text(
               '${DateTime.now().year}',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 5,
             ),
-            Text(
+            const Text(
               'Logan Boisvert',
               style: TextStyle(
                 fontSize: 16,
