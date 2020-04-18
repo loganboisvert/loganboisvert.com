@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:logan_boisvert_website/routes/about/about.dart';
 import 'package:logan_boisvert_website/routes/index/index.dart';
 import 'package:logan_boisvert_website/routes/podcast/podcast.dart';
+import 'package:logan_boisvert_website/routes/schedule/schedule.dart';
 import 'package:logan_boisvert_website/routes/store/store.dart';
 import 'package:logan_boisvert_website/routes/streaming/streaming.dart';
 import 'package:logan_boisvert_website/widgets/colors.dart';
@@ -17,8 +18,8 @@ class NavButtons {
     NavButton(name: 'About Me', route: AboutRoute.route),
     NavButton(name: 'Podcast', route: PodcastRoute.route),
     NavButton(name: 'Streaming', route: StreamingRoute.route),
+    NavButton(name: 'Schedule', route: ScheduleRoute.route),
     NavButton(name: 'Store', route: StoreRoute.route),
-
   ];
 }
 
@@ -52,14 +53,10 @@ class _NavButtonState extends State<NavButton> {
               onPressed: () => Navigator.pushNamed(context, widget.route),
               child: Text(
                 widget.name,
-                style: const TextStyle(
-                    color: ThemeColors.text,
-                    fontSize: 36
-                ),
+                style: const TextStyle(color: ThemeColors.text, fontSize: 36),
               ),
             ),
           ),
-        )
-    );
+        ));
   }
 }
