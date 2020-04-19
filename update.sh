@@ -14,4 +14,3 @@ cp -r build/web/flutter_service_worker.js .
 cp -r build/web/index.html .
 cp -r build/web/main.dart.js .
 cp -r build/web/main.dart.js.map .
-cp -r build/web/icons .
