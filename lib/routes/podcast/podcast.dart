@@ -58,11 +58,11 @@ class PodcastRoute extends StatelessWidget {
 class _IFrame extends StatelessWidget {
   final IFrameElement _iFrameElement = new IFrameElement();
 
-  _IFrame(
-      {@required String src, @required String width}) {
+  _IFrame({@required String src, @required String width}) {
     _iFrameElement.width = width;
     _iFrameElement.src = src;
     _iFrameElement.style.border = 'none';
+
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory(
       'iFrameElement',

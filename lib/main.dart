@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Logan Boisvert',
-      theme: Themes().mainTheme,
+      theme: Themes().light,
+      darkTheme: Themes().dark,
       routes: {
         IndexRoute.route: (context) => IndexRoute(),
         AboutRoute.route: (context) => AboutRoute(),

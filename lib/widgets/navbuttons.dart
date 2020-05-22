@@ -8,7 +8,6 @@ import 'package:logan_boisvert_website/routes/podcast/podcast.dart';
 import 'package:logan_boisvert_website/routes/schedule/schedule.dart';
 import 'package:logan_boisvert_website/routes/store/store.dart';
 import 'package:logan_boisvert_website/routes/streaming/streaming.dart';
-import 'package:logan_boisvert_website/widgets/colors.dart';
 
 class NavButtons {
   static const buttons = <Widget>[
@@ -37,7 +36,9 @@ class _NavButtonState extends State<NavButton> {
 
   @override
   Widget build(BuildContext context) {
-    Color backgroundColor = _active ? ThemeColors.accent : ThemeColors.primary;
+    Color backgroundColor = _active
+        ? Theme.of(context).accentColor
+        : Theme.of(context).primaryColor;
 
     return MouseRegion(
         onEnter: (e) => setState(() => _active = true),
@@ -53,7 +54,9 @@ class _NavButtonState extends State<NavButton> {
               onPressed: () => Navigator.pushNamed(context, widget.route),
               child: Text(
                 widget.name,
-                style: const TextStyle(color: ThemeColors.text, fontSize: 36),
+                style: const TextStyle(
+                  fontSize: 36,
+                ),
               ),
             ),
           ),

@@ -1,6 +1,5 @@
 // Flutter imports
 import 'package:flutter/material.dart';
-import 'package:logan_boisvert_website/widgets/colors.dart';
 
 // Package imports
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -11,7 +10,12 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
+      height: 100,
+      decoration: BoxDecoration(
+        border: Border.symmetric(
+          vertical: Divider.createBorderSide(context),
+        ),
+      ),
       padding: EdgeInsets.only(bottom: 10),
       child: Center(
         child: Row(
@@ -25,28 +29,16 @@ class Footer extends StatelessWidget {
             const SizedBox(
               width: 20,
             ),
-            const Icon(
+            Icon(
               MdiIcons.copyright,
-              color: ThemeColors.accent,
             ),
             const SizedBox(
               width: 5,
             ),
             Text(
-              '${DateTime.now().year}',
-              style: const TextStyle(
-                fontSize: 16,
-                color: ThemeColors.accent,
-              ),
-            ),
-            const SizedBox(
-              width: 5,
-            ),
-            const Text(
-              'Logan Boisvert',
+              '${DateTime.now().year} Logan Boisvert',
               style: TextStyle(
                 fontSize: 16,
-                color: ThemeColors.accent,
               ),
             ),
           ],
@@ -56,7 +48,7 @@ class Footer extends StatelessWidget {
   }
 }
 
-class _SocialIcon extends StatefulWidget {
+class _SocialIcon extends StatelessWidget {
   final IconData icon;
   final String url;
   final String toolTip;
@@ -65,45 +57,19 @@ class _SocialIcon extends StatefulWidget {
       {@required this.icon, @required this.url, @required this.toolTip});
 
   @override
-  State<StatefulWidget> createState() {
-    return _SocialIconState();
-  }
-}
-
-class _SocialIconState extends State<_SocialIcon> {
-  bool _hovering = false;
-
-  @override
   Widget build(BuildContext context) {
-    Color backgroundColor =
-        _hovering ? ThemeColors.accent : ThemeColors.primary;
-    Color iconColor = _hovering ? ThemeColors.primary : ThemeColors.accent;
     return Tooltip(
-      message: widget.toolTip,
+      message: toolTip,
       child: GestureDetector(
         onTap: () {
-          openUrl(widget.url);
+          openUrl(url);
         },
-        child: MouseRegion(
-          onEnter: (_) {
-            setState(() {
-              _hovering = true;
-            });
-          },
-          onExit: (_) {
-            setState(() {
-              _hovering = false;
-            });
-          },
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: backgroundColor,
-            ),
-            child: Icon(
-              widget.icon,
-              color: iconColor,
-            ),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Icon(
+            icon,
           ),
         ),
       ),
