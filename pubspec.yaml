@@ -5,7 +5,8 @@ version: "1.0.0+1"
 dependencies:
   flutter:
     sdk: flutter
-  material_design_icons_flutter: 3.2.3695
+  material_design_icons_flutter: "3.2.3695"
+  responsive_builder:
   url_launcher:
 dev_dependencies:
   local_google_fonts: "^1.0.8"

@@ -6,8 +6,6 @@ import 'package:logan_boisvert_website/routes/about/about.dart';
 import 'package:logan_boisvert_website/routes/index/index.dart';
 import 'package:logan_boisvert_website/routes/404/404.dart';
 import 'package:logan_boisvert_website/routes/podcast/podcast.dart';
-import 'package:logan_boisvert_website/routes/schedule/schedule.dart';
-import 'package:logan_boisvert_website/routes/store/store.dart';
 import 'package:logan_boisvert_website/routes/streaming/streaming.dart';
 import 'package:logan_boisvert_website/themes.dart';
 
@@ -28,8 +26,6 @@ class MyApp extends StatelessWidget {
         AboutRoute.route: (context) => AboutRoute(),
         StreamingRoute.route: (context) => StreamingRoute(),
         PodcastRoute.route: (context) => PodcastRoute(),
-        StoreRoute.route: (context) => StoreRoute(),
-        ScheduleRoute.route: (context) => ScheduleRoute(),
       },
       onUnknownRoute: (_) => MaterialPageRoute(
         builder: (context) => Route404(),

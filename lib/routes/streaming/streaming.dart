@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // Project imports
 import 'package:logan_boisvert_website/widgets/appbar.dart';
 import 'package:logan_boisvert_website/widgets/footer.dart';
+import 'package:logan_boisvert_website/widgets/navigation/navigation_bar.dart';
 
 class StreamingRoute extends StatelessWidget {
   static const route = '/stream';
@@ -11,10 +12,10 @@ class StreamingRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const AppBarTitle(),
-        centerTitle: true,
-        titleSpacing: 0.0,
+      body: Column(
+        children: [
+          NavigationBar(),
+        ],
       ),
       drawer: const Menu(),
       bottomSheet: const Footer(),
