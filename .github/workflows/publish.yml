@@ -23,6 +23,7 @@ jobs:
           git config --global user.name "GitHub Pages Publisher"
           git checkout pubspec.lock
           git checkout gh-pages
+          git pull
           sh update.sh
           git add .
           git commit -m "Publish to GitHub Pages"
