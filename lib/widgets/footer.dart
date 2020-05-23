@@ -30,6 +30,7 @@ class Footer extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   MdiIcons.copyright,
+                  color: Theme.of(context).primaryColor,
                 ),
                 SizedBox(
                   width: 5,
@@ -38,6 +39,7 @@ class Footer extends StatelessWidget {
                   '${DateTime.now().year} Logan Boisvert',
                   style: TextStyle(
                     fontSize: 16,
+                    color: Theme.of(context).primaryColor,
                   ),
                 ),
               ],
