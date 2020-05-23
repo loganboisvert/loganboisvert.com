@@ -1,53 +1,34 @@
 import 'package:flutter/material.dart';
 
-import 'package:logan_boisvert_website/routes/about/about.dart';
-import 'package:logan_boisvert_website/routes/index/index.dart';
-import 'package:logan_boisvert_website/routes/podcast/podcast.dart';
-import 'package:logan_boisvert_website/routes/streaming/streaming.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavigationBarDesktop extends StatelessWidget {
+  final navigationLinks;
+  final List<Widget> _navBarItems = [];
+
+  NavigationBarDesktop({@required this.navigationLinks}) {
+    navigationLinks.forEach((name, valueMap) {
+      _navBarItems.add(
+        _NavBarItem(
+          name: name,
+          url: valueMap["url"],
+          externalLink: valueMap["external"],
+        ),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Theme.of(context).dividerColor,
-      height: 75.0,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              _NavBarItem(
-                name: "HOME",
-                url: IndexRoute.route,
-                externalLink: false,
-              ),
-              _NavBarItem(
-                name: "ABOUT",
-                url: AboutRoute.route,
-                externalLink: false,
-              ),
-              _NavBarItem(
-                name: "PODCAST",
-                url: PodcastRoute.route,
-                externalLink: false,
-              ),
-              _NavBarItem(
-                name: "STREAMING",
-                url: StreamingRoute.route,
-                externalLink: false,
-              ),
-              _NavBarItem(
-                name: "MERCHANDISE",
-                url: "https://shop.spreadshirt.com/loganboisvert",
-                externalLink: true,
-              ),
-            ],
-          ),
-          Row(),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: _navBarItems,
+        ),
+        Row(),
+      ],
     );
   }
 }
@@ -58,7 +39,7 @@ class _NavBarItem extends StatefulWidget {
   final bool externalLink;
 
   const _NavBarItem(
-      {@required this.name, this.url, @required this.externalLink});
+      {@required this.name, @required this.url, @required this.externalLink});
 
   @override
   State<StatefulWidget> createState() {
