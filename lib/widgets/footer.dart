@@ -16,34 +16,61 @@ class Footer extends StatelessWidget {
           vertical: Divider.createBorderSide(context),
         ),
       ),
-      padding: EdgeInsets.only(bottom: 10),
+      padding: EdgeInsets.symmetric(vertical: 10),
       child: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const _SocialIcon(
-              icon: MdiIcons.githubCircle,
-              url: 'https://github.com/loganboisvert',
-              toolTip: 'GitHub',
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const _SocialIcon(
+                  icon: MdiIcons.githubCircle,
+                  url: 'https://github.com/loganboisvert',
+                  toolTip: 'GitHub',
+                ),
+                const _SocialIcon(
+                  icon: MdiIcons.youtube,
+                  url: 'https://www.youtube.com/loganboisvert',
+                  toolTip: 'YouTube',
+                ),
+                const _SocialIcon(
+                  icon: MdiIcons.twitch,
+                  url: 'https://www.twitch.tv/loganboisvert',
+                  toolTip: 'Twitch',
+                ),
+                const _SocialIcon(
+                  icon: MdiIcons.instagram,
+                  url: 'https://www.instagram.com/logan_boisvert/',
+                  toolTip: 'Instagram',
+                ),
+                const _SocialIcon(
+                  icon: MdiIcons.discord,
+                  url: 'https://discord.gg/r72798A',
+                  toolTip: 'Discord',
+                ),
+              ],
             ),
-            const _SocialIcon(
-                icon: MdiIcons.youtube,
-                url: 'https://www.youtube.com/loganboisvert',
-                toolTip: 'YouTube'),
-            const SizedBox(
-              width: 20,
+            Divider(
+              color: Theme.of(context).accentColor,
+              thickness: 2,
             ),
-            Icon(
-              MdiIcons.copyright,
-            ),
-            const SizedBox(
-              width: 5,
-            ),
-            Text(
-              '${DateTime.now().year} Logan Boisvert',
-              style: TextStyle(
-                fontSize: 16,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Icon(
+                  MdiIcons.copyright,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '${DateTime.now().year} Logan Boisvert',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -62,19 +89,24 @@ class _SocialIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Tooltip(
-      message: toolTip,
-      child: GestureDetector(
-        onTap: () {
-          openUrl(url);
-        },
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Center(
-            child: Icon(
-              icon,
+    return Padding(
+      padding: const EdgeInsets.only(
+        right: 15.0,
+      ),
+      child: Tooltip(
+        message: toolTip,
+        child: GestureDetector(
+          onTap: () {
+            openUrl(url);
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Center(
+              child: Icon(
+                icon,
+              ),
             ),
           ),
         ),
