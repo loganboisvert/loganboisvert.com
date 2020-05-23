@@ -11,11 +11,7 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      decoration: BoxDecoration(
-        border: Border.symmetric(
-          vertical: Divider.createBorderSide(context),
-        ),
-      ),
+      color: Theme.of(context).dividerColor,
       padding: EdgeInsets.symmetric(vertical: 10),
       child: Center(
         child: Column(
