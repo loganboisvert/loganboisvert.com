@@ -26,6 +26,10 @@ class Footer extends StatelessWidget {
               url: 'https://github.com/loganboisvert',
               toolTip: 'GitHub',
             ),
+            const _SocialIcon(
+                icon: MdiIcons.youtube,
+                url: 'https://www.youtube.com/loganboisvert',
+                toolTip: 'YouTube'),
             const SizedBox(
               width: 20,
             ),
