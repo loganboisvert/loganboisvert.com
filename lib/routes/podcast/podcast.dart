@@ -6,7 +6,6 @@ import 'dart:html';
 import 'dart:ui' as ui;
 
 // Project imports
-import 'package:logan_boisvert_website/widgets/appbar.dart';
 import 'package:logan_boisvert_website/widgets/footer.dart';
 import 'package:logan_boisvert_website/widgets/navigation/navigation_bar.dart';
 
