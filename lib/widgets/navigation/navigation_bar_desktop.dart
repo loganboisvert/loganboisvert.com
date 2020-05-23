@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logan_boisvert_website/widgets/social_icons.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -27,7 +28,10 @@ class NavigationBarDesktop extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: _navBarItems,
         ),
-        Row(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: SocialIcons,
+        ),
       ],
     );
   }

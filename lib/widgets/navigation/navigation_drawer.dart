@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logan_boisvert_website/widgets/social_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -21,8 +22,18 @@ class NavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: _navDrawerItems,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: _navDrawerItems,
+          ),
+          Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: SocialIcons,
+          )
+        ],
       ),
     );
   }

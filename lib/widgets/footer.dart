@@ -1,9 +1,9 @@
 // Flutter imports
 import 'package:flutter/material.dart';
+import 'package:logan_boisvert_website/widgets/social_icons.dart';
 
 // Package imports
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Footer extends StatelessWidget {
   const Footer();
@@ -19,33 +19,7 @@ class Footer extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const _SocialIcon(
-                  icon: MdiIcons.githubCircle,
-                  url: 'https://github.com/loganboisvert',
-                  toolTip: 'GitHub',
-                ),
-                const _SocialIcon(
-                  icon: MdiIcons.youtube,
-                  url: 'https://www.youtube.com/loganboisvert',
-                  toolTip: 'YouTube',
-                ),
-                const _SocialIcon(
-                  icon: MdiIcons.twitch,
-                  url: 'https://www.twitch.tv/loganboisvert',
-                  toolTip: 'Twitch',
-                ),
-                const _SocialIcon(
-                  icon: MdiIcons.instagram,
-                  url: 'https://www.instagram.com/logan_boisvert/',
-                  toolTip: 'Instagram',
-                ),
-                const _SocialIcon(
-                  icon: MdiIcons.discord,
-                  url: 'https://discord.gg/r72798A',
-                  toolTip: 'Discord',
-                ),
-              ],
+              children: SocialIcons,
             ),
             Divider(
               color: Theme.of(context).accentColor,
@@ -73,44 +47,4 @@ class Footer extends StatelessWidget {
       ),
     );
   }
-}
-
-class _SocialIcon extends StatelessWidget {
-  final IconData icon;
-  final String url;
-  final String toolTip;
-
-  const _SocialIcon(
-      {@required this.icon, @required this.url, @required this.toolTip});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        right: 15.0,
-      ),
-      child: Tooltip(
-        message: toolTip,
-        child: GestureDetector(
-          onTap: () {
-            openUrl(url);
-          },
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Center(
-              child: Icon(
-                icon,
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-void openUrl(String url) async {
-  await launch(url);
 }
