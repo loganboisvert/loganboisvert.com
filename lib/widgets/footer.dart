@@ -68,8 +68,10 @@ class _SocialIcon extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Icon(
-            icon,
+          child: Center(
+            child: Icon(
+              icon,
+            ),
           ),
         ),
       ),
