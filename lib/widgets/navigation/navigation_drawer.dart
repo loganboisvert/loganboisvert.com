@@ -1,7 +1,12 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:logan_boisvert_website/widgets/social_icons.dart';
+
+// Package imports:
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+// Project imports:
+import 'package:logan_boisvert_website/widgets/social_icons.dart';
 
 class NavigationDrawer extends StatelessWidget {
   final navigationLinks;

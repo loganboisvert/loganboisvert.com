@@ -1,9 +1,15 @@
 // Flutter imports
+
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
+// Project imports:
 import 'package:logan_boisvert_website/widgets/social_icons.dart';
 
 // Package imports
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Footer extends StatelessWidget {
   const Footer();

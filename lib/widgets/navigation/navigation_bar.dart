@@ -1,7 +1,12 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:responsive_builder/responsive_builder.dart';
+
+// Project imports:
 import 'package:logan_boisvert_website/widgets/navigation/navigation_bar_desktop.dart';
 import 'package:logan_boisvert_website/widgets/navigation/navigation_bar_mobile.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class NavigationBar extends StatelessWidget {
   final navigationLinks;

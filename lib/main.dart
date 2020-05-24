@@ -1,7 +1,7 @@
-// Flutter imports
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports
+// Project imports:
 import 'package:logan_boisvert_website/routes/about/about.dart';
 import 'package:logan_boisvert_website/routes/index/index.dart';
 import 'package:logan_boisvert_website/routes/404/404.dart';
