@@ -1,5 +1,7 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:logan_boisvert_website/widgets/theme_toggler.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // Package imports:
 import 'package:url_launcher/url_launcher.dart';
@@ -32,10 +34,7 @@ class NavigationBarDesktop extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: _navBarItems,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: SocialIcons,
-        ),
+        ThemeToggler(),
       ],
     );
   }
